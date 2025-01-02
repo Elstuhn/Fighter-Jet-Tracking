@@ -12,6 +12,7 @@ import cv2
 from PIL import Image
 import matplotlib.pyplot as plt
 from torchvision.ops import nms
+import time
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a detector')
@@ -63,6 +64,7 @@ def main():
         osp.join(args.tmpdir, 'frame_%d.jpg')
     ).run()
     
+    start_time = time.perf_counter()
     for frame in tqdm(os.listdir(args.tmpdir)):
         frame_path = osp.join(args.tmpdir, frame)
         bboxes, labels, scores = detect(model, frame_path)
@@ -72,6 +74,7 @@ def main():
             cv2.rectangle(img, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
         cv2.imwrite(frame_path, img)
 
+    end_time = time.perf_counter()
     input_pattern = osp.join(args.tmpdir, 'frame_%d.jpg')
     try:
         (
@@ -83,7 +86,9 @@ def main():
     except ffmpeg.Error as e:
         print("An error occurred with ffmpeg:")
         print(e.stderr.decode())
-
+        
+    print("Inference Done")
+    print(f"Time taken: {end_time - start_time:.3f} seconds")
 
 if __name__ == '__main__':
     main()
