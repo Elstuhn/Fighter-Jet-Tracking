@@ -3,4 +3,5 @@ A small study to compare tracking methods for accurate and consistent fighter-je
 
 # Methods
 ### Frame Differencing
-[![Brightened frame difference](https://raw.githubusercontent.com/Elstuhn/Jet-Detection/main/frame_diff_eg.png)](https://raw.githubusercontent.com/Elstuhn/Jet-Detection/main/frame_diff_chinesejet.mp4)
+https://github.com/user-attachments/assets/52292b1d-7768-4496-9a12-4f2d3cc60070
+
