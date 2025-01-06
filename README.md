@@ -12,6 +12,7 @@ A small study to compare tracking methods for accurate and consistent fighter-je
 ## Methods
 ### Object Detection With Kalman Filter
 The model used for object detection was RTMDet trained from scratch without any pretraining for around 200 epochs on fighter-jet images (still-images).
+
 https://github.com/user-attachments/assets/f0b2c401-8985-4b6d-8b87-0ada3d9c44b7
 
 
