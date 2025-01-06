@@ -20,3 +20,11 @@ https://github.com/user-attachments/assets/f0b2c401-8985-4b6d-8b87-0ada3d9c44b7
 ### Frame Differencing
 https://github.com/user-attachments/assets/52292b1d-7768-4496-9a12-4f2d3cc60070
 
+
+### Masking
+https://github.com/user-attachments/assets/c98b12df-7428-4674-9453-cafb18a511c9
+
+## Improvements
+1. Contour detection using masked frames
+2. Template matching for noisy background
+3. Class balancing for jet classification problem
