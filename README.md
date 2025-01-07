@@ -1,6 +1,8 @@
 # Visual Fighter-Jet Tracking
 A small study to compare tracking methods for accurate and consistent fighter-jet tracking (and to learn how to implement kalman filters as well as cv2)
 
+Training a robust object detector that generalizes well and implementing tracking methods such as kalman filtering makes it such that no VOD methods has to be used which may require more data, computation and hassle of setting up and training.
+
 ## Benchmark
 | Mode  | Avg img process time | Performance |
 | ------------- | ------------- | ------------- |
