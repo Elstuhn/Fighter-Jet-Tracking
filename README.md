@@ -7,7 +7,7 @@ Training a robust object detector that generalizes well and implementing trackin
 | Mode  | Avg img process time | Performance |
 | ------------- | ------------- | ------------- |
 | Object Detection (RTMDet)  | 60.5ms  | NaN |
-| ONNX on Python  | 60.1ms  | NaN |
+| Object Detection with Kalman Filter  | 60.1ms  | NaN |
 | Frame Difference and Masking  | 4.59ms  | NaN |
 
 
